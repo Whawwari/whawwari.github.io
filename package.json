@@ -2,7 +2,7 @@
   "homepage": "http://Whawwari.github.io/Whawwari.github.io/",
   "name": "whawwari.github.io",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
