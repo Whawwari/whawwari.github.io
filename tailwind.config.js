@@ -18,7 +18,7 @@ export default {
        "Gold": "#D4AF37",
        "Blood":"#6D1919",
        "PinkNude":"#7F423D",
-       "Gray":"#A8AD97",
+       "Gray":"#414141",
        "DPaige":"#D0C9B5",
        "LPink":"#EADAD0",
       },
@@ -43,6 +43,7 @@ content:{
   Art_2: "url(@/assets/img/Art_2.png)",
   Art_3: "url(@/assets/img/Art_3.png)",
   Frame: "url(@/assets/img/Frame.png)",
+  gallary: "url(@/assets/img/Gallary.png)"
 },
 
 },

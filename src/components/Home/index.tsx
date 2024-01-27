@@ -1,12 +1,8 @@
 import { SelectedPage } from '@/shared/types'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import Spline from "@splinetool/react-spline";
-// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import MainTitle from "@/assets/img/MainTitle.png"
-// import MainTT from "@/assets/img/MainTT.png"
 import ActionButton from '@/shared/ActionButton';
-// import PlaceHolder from '@/assets/img/PNGimg.png'
-
 import Art_1 from "@/assets/img/Art_1.png"
 import Art_2 from "@/assets/img/Art_2.png"
 import Art_3 from "@/assets/img/Art_3.png"
@@ -59,18 +55,17 @@ return (
     {/* <img alt="Placeholder" src={PlaceHolder}/> */}
     <Spline scene="https://prod.spline.design/l1M2Zxypra5uUpTB/scene.splinecode"/>
 </div>
-{/*className="h- z-10 md:z-10; md:ml-40 md:mt-16 md:justify-items-end md:h-3/5 md:w-3/5"*/}
 </div>
 
 {/* transition */}
 {isAboveMediumScreens && (
   
-    <div className="h-[450px] w-full bg-primary-100 bg-LPink mt-28">
+    <div className="h-[450px] w-full bg-Gray mt-28">
     <div className="mx-auto w-5/6">
-      <div className="flex items-center justify-between gap-8 m-">
-                <img className = "h-96 py-6" alt='Art_1' src={Art_1}/>
-                <img className = "h-96 py-6" alt='Art_2' src={Art_2}/>
-                <img className = "h-96 py-6" alt='Art_3' src={Art_3}/> 
+      <div className="flex items-center justify-between">
+                <img className = "h-[450px] py-6 mt-6" alt='Art_1' src={Art_1}/>
+                <img className = "h-[450px] py-4 mt-6" alt='Art_2' src={Art_2}/>
+                <img className = "h-[450px] py-6 mt-6" alt='Art_3' src={Art_3}/> 
             </div> 
         </div>
     </div>

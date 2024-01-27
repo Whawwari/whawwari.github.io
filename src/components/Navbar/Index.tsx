@@ -38,7 +38,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                             {/* <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> */}
                            
                             <ResumeLink>{/*Fix this link and make it better */}
-                                <span className="text-black hover:text-LPurple">Resume</span>
+                                <span className="text-black hover:text-LPink">Resume</span>
                             </ResumeLink>
 
                     </div>

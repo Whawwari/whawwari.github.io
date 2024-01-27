@@ -8,7 +8,7 @@ type Props={
   
 const Footer = ({setSelectedPage}:Props) => {
     return (
-    <footer className="bg-Paige py-16 mt-64 w-screen">
+    <footer className="bg-Blood py-16 mt-64 w-screen" > {/* play with the colour of the footer bg */}
  
 <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}>
 

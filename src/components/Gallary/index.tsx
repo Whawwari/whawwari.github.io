@@ -1,14 +1,9 @@
 import {motion} from "framer-motion";
-// import React, { useRef } from "react";
-// import { FiArrowRight } from "react-icons/fi";
 import FunWE from '@/assets/img/FunWE.png'
 import SmartWE from '@/assets/img/SmartWe.png'
 import { SelectedPage } from "@/shared/types";
 import Expandable from "@/shared/Expanable";
-// import { ArrowLongUpIcon } from '@heroicons/react/24/solid';
-// import Frame from '@/assets/img/Frame.png'
-
-
+import gallary from "@/assets/img/Gallary.png";
 
 
 type Props={
@@ -17,27 +12,23 @@ type Props={
 
 export const Gallary = ({setSelectedPage}:Props) => {
   return (
-    <section id="gallary" className="bg-Paige mx-auto h-auto min-h-full w-full md:mt-80">
-      
-      <div className="flex justify-center bg-Blood h-auto">
-          <div className="text-white text-7xl rounded-lg w-58 " >
-            Gallery
-          {/* <img className = "h-96 rotate-90" alt='Frame' src={Frame}/> */}
-          </div>
+    <section id="gallary" className="bg-Paige mx-auto h-auto min-h-full w-full md:mt-96">
+
+      <div className=" flex justify-center max-w-full h-auto ">         
+          <img className="object-cover h]" alt='Frame' src={gallary}/>
        </div>
 
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Gallary)}>
       
-      <div className="flex-column mx-auto max-w-7xl mt-20 h-full">
+      <div className="flex-column mx-auto max-w-7xl h-full">
 
-
-        <div className="mb-20 mt-44">
+        <div className="mb-20">
 
     {/* ABOUT ME  */}
-          <Expandable headerText="About Me" headerClassName="text-5xl text-white text-center mx-auto">
+          <Expandable headerText="About Me" headerClassName="text-5xl text-white text-center mx-auto ">
             
             {/*ABOUT ME PERSONAL */}
-        <div className="container mx-auto flex px-10 pt-20 md:flex-row flex-col items-center">
+        <div className="container mx-auto flex px-10 pt-20 md:flex-row flex-col items-center bg-PinkNude">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I'm Waleed!  
@@ -50,16 +41,16 @@ export const Gallary = ({setSelectedPage}:Props) => {
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded-3xl"
             alt="FunWE" src={FunWE}
           />
         </div>
       </div>
 {/*ABOUT ME PART 2 */}
-      <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center bg-PinkNude ">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
-              className="object-cover object-center rounded"
+              className="object-cover object-center rounded-3xl"
               alt="SmartWe" src={SmartWE}
               />
         </div>
@@ -75,12 +66,10 @@ export const Gallary = ({setSelectedPage}:Props) => {
          </Expandable>
         </div>
 
-
-
     {/* CAREERS  */}
      <div className="mb-20">
       <Expandable headerText="Careers" headerClassName="text-5xl text-white text-center mx-auto">
-        <div className="h-auto relative flex flex-col items-center">
+        <div className="h-auto relative flex flex-col items-center bg-PinkNude rounded-3xl">
           {/* Row for Image 1 and Image 3 */}
           <div className="flex w-full justify-between items-start">
             {/* Image 1 Hover */}
