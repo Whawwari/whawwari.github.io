@@ -21,6 +21,8 @@ export default {
        "Gray":"#414141",
        "DPaige":"#D0C9B5",
        "LPink":"#EADAD0",
+       "Stone":"#1F1E1C",
+       "Maroon":"#800000",
       },
       
 backgroundImage: (theme) => ({

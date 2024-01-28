@@ -4,6 +4,7 @@ import { SelectedPage } from "./shared/types";
 import Home from "@/components/Home";
 import Gallary from "./components/Gallary";
 import Footer from "@/components/Footer/Index";
+import Contact from "./components/Contact";
 
 
 
@@ -25,24 +26,30 @@ const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home
 
   return ( 
 
-  <div className="app bg-Paige h-full">
+  <div className="app bg-white h-full">
   <Navbar 
   selectedPage={selectedPage} 
   setSelectedPage={setSelectedPage}
   isTopOfPage={isTopOfPage}
   />
 
-<div className=" bg-Paige">
+<div className=" bg-">
   <Home setSelectedPage={setSelectedPage}/>
 </div>
  
-  <div className=" bg-Paige relative">
+  <div className=" bg- relative">
     <Gallary setSelectedPage={setSelectedPage}/>
   </div>
   
 
- <div className=" bg-Paige absolute">
+ <div className=" bg- absolute">
  <Footer
+  setSelectedPage={setSelectedPage}/>
+</div>
+
+
+<div className=" bg- absolute">
+ <Contact
   setSelectedPage={setSelectedPage}/>
 </div>
 

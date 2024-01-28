@@ -21,13 +21,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
     //remove fixed top 0 cause it causes it to stay as you scroll. 
   return (
   <nav>
-    <div className={`${navbarbackground} {flexBetween} relative top-0 z-30 w-full py-6 bg-Blood`}>
+    <div className={`${navbarbackground} {flexBetween} relative top-0 z-30 w-full py-6 bg-Stone`}>
         <div className={`${flexBetween} mx-auto w-5/6`}>
            <div className={`${flexBetween} w-full gap-16`}>
 
              {/*leftside*/}
-            <img alt="logo" width={100} height={100} src={logo} />
-
+            {/* <img alt="logo" width={100} height={100} src={logo} /> */}
+            <div className="text-white ">Waleed</div>
 
             {/*rightside*/}
             {isAboveMediumScreens ? (
@@ -36,9 +36,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                         <Link page="Gallary" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                             {/* <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> */}
-                           
                             <ResumeLink>{/*Fix this link and make it better */}
-                                <span className="text-black hover:text-LPink">Resume</span>
+                                <span className="text-white hover:text-Maroon">Resume</span>
                             </ResumeLink>
 
                     </div>

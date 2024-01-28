@@ -20,7 +20,7 @@ const Expandable: React.FC<ExpandableProps & { className?: string, headerClassNa
   return (
     <div className={`collapsible ${className || ''}`}>
       <div
-        className={`header bg-black rounded-xl w-64 hover:bg-gray ${headerClassName || ''} hover:scale-150 hover:text-PinkNude transition-transform duration-300`}
+        className={`header bg-black rounded-xl w-64 hover:bg-gray ${headerClassName || ''} hover:scale-150 hover:text-LPink transition-transform duration-300`}
         style={headerStyle}
         {...getToggleProps()}
       >

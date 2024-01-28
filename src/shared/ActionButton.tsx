@@ -11,7 +11,7 @@ type Props = {
 const ActionButton = ({ children, setSelectedPage }: Props) => {
   return (
     <AnchorLink 
-    className="rounded-md bg-white text-black px-10 py-2 hover:bg-Gray hover:text-Blood"
+    className="rounded-md bg-Stone text-white px-10 py-2 hover:bg-Maroon hover:text-white"
     onClick={()=> setSelectedPage(SelectedPage.Gallary)}
     href={`#${SelectedPage.Gallary}`}>
 
