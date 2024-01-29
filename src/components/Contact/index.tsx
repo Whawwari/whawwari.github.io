@@ -6,7 +6,7 @@ type Props={
   };
 
   
-const Contact = ({setSelectedPage}:Props) => {
+const Contact = ({}:Props) => {
     return (
    <div>
 

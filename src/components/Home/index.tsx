@@ -22,7 +22,7 @@ return (
              {/*header*/}
             <div className='md:-mt-20'>
                 <div className="relative">
-                    <div className='before:absolute before:-top-80 before:-left-60 before:z-[-1] before:-top-80px md:before:content-MainTT'>
+                    <div className='before:absolute before:-top-60 before:-left-40 before:z-[-1] before:-top-80px md:before:content-MainTT'>
                         <img  className="h-auto" alt="MainTitle" src={MainTitle}/>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ return (
         
     
 {/*image*/}
-<div className="z-10 md:z-10; md:ml-40 md:mt-16 md:justify-items-end md:h-3/5 md:w-3/5 ">
+<div className="z-10  md:z-10; md:ml-40 md:mt-16 md:justify-items-end md:h-3/5 md:w-3/5 ">
     <Spline scene="https://prod.spline.design/l1M2Zxypra5uUpTB/scene.splinecode"/>
 </div>
 </div>

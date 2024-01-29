@@ -8,7 +8,7 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 import Art_1 from "@/assets/img/Art_1.png"
 import Art_2 from "@/assets/img/Art_2.png"
 import Art_3 from "@/assets/img/Art_3.png"
-
+import RadicalX from "@/assets/img/RadicalX.png"
 
 type Props={
   setSelectedPage: (value:SelectedPage) => void
@@ -25,40 +25,27 @@ export const Gallary = ({setSelectedPage}:Props) => {
 
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Gallary)}>
 
-      {/* transition */}
-{isAboveMediumScreens && (
-  
-  <div className="h-[450px] w-full">
-  <div className="mx-auto w-5/6">
-    <div className="flex items-center justify-between">
-              <img className = "h-[450px] py-6 " alt='Art_1' src={Art_1}/>
-              <img className = "h-[450px] py-4" alt='Art_2' src={Art_2}/>
-              <img className = "h-[450px] py-6" alt='Art_3' src={Art_3}/> 
-          </div> 
-      </div>
-  </div>
-)
-}
       <div className="flex-column mx-auto max-w-7xl h-full bg-">
         
-         {/* ABOUT ME  */}
+  {/* ABOUT ME  */}
         <div className="mb-20">
-          <Expandable headerText="About Me" headerClassName="text-5xl text-white text-center mx-auto mt-8">
-            {/*ABOUT ME PERSONAL */}
-        <div className="container mx-auto flex px-10 pt-20 md:flex-row flex-col items-center bg-white">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-Stone">
+          <Expandable headerText="About Me" headerClassName="text-5xl text-white text-center mx-auto mt-8 my-4">
+  {/*ABOUT ME PERSONAL */}
+  <div className="border-4 border-solid border-black p-4">
+        <div className="container mx-auto flex px-10 pt-20 md:flex-row flex-col items-center ">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-Ferrari ml-4">
             Hi, I'm Waleed!  
-            <br className="inline-block" /> Let me catch you up to date;
+            <br className="inline-block" /> Let me introduce myself;
           </h1>
 
-          <p className="mb-8 leading-relaxed">
+          <p className="mb-8 leading-relaxed ml-4 text-white">
           Where to begin... <br/> I am a passionate indivual who puts his all into what ever he starts. I enjoy working out, swimming and reading. My favourite book is <span className="text-white ">Still Mine</span> by Amy Stuart. 
           I developed my passion for Coding during Covid and ever since Ive been an addict. :).
           </p> 
 
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ml-4">
           <img
             className="object-cover object-center rounded-3xl"
             alt="FunWE" src={FunWE}
@@ -66,7 +53,7 @@ export const Gallary = ({setSelectedPage}:Props) => {
         </div>
       </div>
 {/*ABOUT ME PART 2 */}
-      <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center bg-white ">
+      <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center  ">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
               className="object-cover object-center rounded-3xl"
@@ -74,13 +61,16 @@ export const Gallary = ({setSelectedPage}:Props) => {
               />
         </div>
 
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center text-white">
           <p className="mb-8 leading-relaxed">
-          I attend the University of Guelph and am currently in my third year, studying Computer Engineering. I have taken a plethora of courses, but my favorites were Data Structures and System Analysis and Design. 
-          These two courses allowed me to work with a team, inspiring one another and pushing each member beyond our limits for us to achieve the impossible.
-          </p> 
+            I attend the University of Guelph and am currently in my third year, studying Computer Engineering. 
+            I've delved into a variety of courses that not only sparked inspiration but also cultivated an environment where each member pushes beyond their limits to achieve the extraordinary. 
+            From coding fundamentals to exploring the realms of artificial intelligence and embedded systems, my coursework has been a dynamic blend of challenge and discovery. 
+            Engaging in hands-on projects and collaborative assignments has been instrumental in shaping my problem-solving skills and fostering a sense of teamwork. 
+          </p>
         </div>
      
+      </div>
       </div>
          </Expandable>
         </div>
@@ -88,17 +78,18 @@ export const Gallary = ({setSelectedPage}:Props) => {
     {/* CAREERS  */}
      <div className="mb-20">
       <Expandable headerText="Careers" headerClassName="text-5xl text-white text-center mx-auto mb-4">
-        <div className="h-auto relative flex flex-col items-center bg-white rounded-3xl">
+        <div className="h-auto relative flex flex-col items-center border-4 border-solid border-black p-4">
 
           {/* Row for Image 1 and Image 3 */}
-          <div className="flex w-full justify-between items-start m-3">
+          <div className="md:flex w-full justify-between items-start m-3">
 
             {/* Image 1 Hover */}
             <div className="relative m-4 ">
-              <img src={FunWE} alt="FunWe.png" className="h-96 rounded-3xl"/>
-              <div className="hover-text absolute inset-0 bg-black bg-opacity-70 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-3xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-              </div>
+              <img src={RadicalX} alt="RadicalX.png" className="h-96 rounded-3xl"/>
+                <div className="hover-text text-m absolute inset-0 bg-black bg-opacity-70 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-3xl">
+                I was tasked with designing and implementing the conformation email that user receive after verifying their emails. using React. I followed a set of requirements and I worked with a team that would check in weekly to inspect progress. 
+                Simultaneously I was in a second team that was tasked to develop a content filter that is implemented into the AI, this required me to learn vertex AI.              
+                </div>
             </div>
 
             {/* Image 2 Hover */}
@@ -109,13 +100,6 @@ export const Gallary = ({setSelectedPage}:Props) => {
               </div>
             </div>
 
-            {/* Image 3 Hover */}
-            <div className="relative m-4">
-              <img src={FunWE} alt="FunWe.png" className="h-96 rounded-3xl"/>
-              <div className="hover-text absolute inset-0 bg-black bg-opacity-70 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-3xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-              </div>
-            </div>
           </div>
 
          
@@ -134,6 +118,22 @@ export const Gallary = ({setSelectedPage}:Props) => {
 
         </div>
       </div>
+
+            {/* transition */}
+{isAboveMediumScreens && (
+  
+  <div className="h-[450px] w-full">
+  <div className="mx-auto w-5/6">
+    <div className="flex items-center justify-between">
+              <img className = "h-[450px] py-6 " alt='Art_1' src={Art_1}/>
+              <img className = "h-[450px] py-4" alt='Art_2' src={Art_2}/>
+              <img className = "h-[450px] py-6" alt='Art_3' src={Art_3}/> 
+          </div> 
+      </div>
+  </div>
+)
+}
+
       </motion.div>     
     </section>
   

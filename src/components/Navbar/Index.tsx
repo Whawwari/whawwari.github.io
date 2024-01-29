@@ -1,6 +1,6 @@
 import{useState} from "react";
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid";
-import logo from "@/assets/img/logo.png"
+// import logo from "@/assets/img/logo.png"
 import Link from "./link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -27,7 +27,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
              {/*leftside*/}
             {/* <img alt="logo" width={100} height={100} src={logo} /> */}
-            <div className="text-white ">Waleed</div>
+            <div className="text-white hover:text-Ferrari hover:animate-spin">Waleed</div>
 
             {/*rightside*/}
             {isAboveMediumScreens ? (
@@ -36,8 +36,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                         <Link page="Gallary" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                             {/* <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/> */}
-                            <ResumeLink>{/*Fix this link and make it better */}
-                                <span className="text-white hover:text-Maroon">Resume</span>
+                           
+                           
+                            <ResumeLink>
+                             <a>Resume</a>
                             </ResumeLink>
 
                     </div>

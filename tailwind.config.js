@@ -23,6 +23,9 @@ export default {
        "LPink":"#EADAD0",
        "Stone":"#1F1E1C",
        "Maroon":"#800000",
+       "Brick":"#B22222",
+       "Ferrari":"#FF2800",
+       "LRed":"#ff4747",
       },
       
 backgroundImage: (theme) => ({
@@ -45,7 +48,8 @@ content:{
   Art_2: "url(@/assets/img/Art_2.png)",
   Art_3: "url(@/assets/img/Art_3.png)",
   Frame: "url(@/assets/img/Frame.png)",
-  gallary: "url(@/assets/img/Gallary.png)"
+  gallary: "url(@/assets/img/Gallary.png)",
+  RadicalX: "url(@/assets/img/RadicalX.png)"
 },
 
 },
