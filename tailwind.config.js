@@ -47,9 +47,10 @@ content:{
   Art_1: "url(@/assets/img/Art_1.png)",
   Art_2: "url(@/assets/img/Art_2.png)",
   Art_3: "url(@/assets/img/Art_3.png)",
-  Frame: "url(@/assets/img/Frame.png)",
+  ComingSoon: "url(@/assets/img/ComingSoon.png)",
   gallary: "url(@/assets/img/Gallary.png)",
-  RadicalX: "url(@/assets/img/RadicalX.png)"
+  RadicalX: "url(@/assets/img/RadicalX.png)",
+  IEEE: "url(@/assets/img/IEEE.png)",
 },
 
 },

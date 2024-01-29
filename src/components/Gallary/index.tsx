@@ -9,6 +9,8 @@ import Art_1 from "@/assets/img/Art_1.png"
 import Art_2 from "@/assets/img/Art_2.png"
 import Art_3 from "@/assets/img/Art_3.png"
 import RadicalX from "@/assets/img/RadicalX.png"
+import ComingSoon from "@/assets/img/ComingSoon.png"
+import IEEE from "@/assets/img/IEEE.png"
 
 type Props={
   setSelectedPage: (value:SelectedPage) => void
@@ -31,9 +33,9 @@ export const Gallary = ({setSelectedPage}:Props) => {
         <div className="mb-20">
           <Expandable headerText="About Me" headerClassName="text-5xl text-white text-center mx-auto mt-8 my-4">
   {/*ABOUT ME PERSONAL */}
-  <div className="border-4 border-solid border-black p-4">
+  <div className="border-4 border-solid border-white p-4">
         <div className="container mx-auto flex px-10 pt-20 md:flex-row flex-col items-center ">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-4 md:mb-0 items-center text-center border-4 border-solid border-white p-4">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-Ferrari ml-4">
             Hi, I'm Waleed!  
             <br className="inline-block" /> Let me introduce myself;
@@ -45,7 +47,7 @@ export const Gallary = ({setSelectedPage}:Props) => {
           </p> 
 
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ml-4">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ml-4 mb-16">
           <img
             className="object-cover object-center rounded-3xl"
             alt="FunWE" src={FunWE}
@@ -53,16 +55,16 @@ export const Gallary = ({setSelectedPage}:Props) => {
         </div>
       </div>
 {/*ABOUT ME PART 2 */}
-      <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center  ">
+      <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
-              className="object-cover object-center rounded-3xl"
+              className="object-cover object-center rounded-3xl mb-4"
               alt="SmartWe" src={SmartWE}
               />
         </div>
 
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center text-white">
-          <p className="mb-8 leading-relaxed">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 p-4 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center text-white border-4 border-solid border-white ml-4">
+          <p className="mb-8 leading-relaxed ">
             I attend the University of Guelph and am currently in my third year, studying Computer Engineering. 
             I've delved into a variety of courses that not only sparked inspiration but also cultivated an environment where each member pushes beyond their limits to achieve the extraordinary. 
             From coding fundamentals to exploring the realms of artificial intelligence and embedded systems, my coursework has been a dynamic blend of challenge and discovery. 
@@ -78,12 +80,13 @@ export const Gallary = ({setSelectedPage}:Props) => {
     {/* CAREERS  */}
      <div className="mb-20">
       <Expandable headerText="Careers" headerClassName="text-5xl text-white text-center mx-auto mb-4">
-        <div className="h-auto relative flex flex-col items-center border-4 border-solid border-black p-4">
+        <div className="h-auto relative flex flex-col items-center border-4 border-solid border-white p-4">
 
           {/* Row for Image 1 and Image 3 */}
           <div className="md:flex w-full justify-between items-start m-3">
 
             {/* Image 1 Hover */}
+            <a href="https://www.radicalx.co" target="_blank" rel="noopener noreferrer">
             <div className="relative m-4 ">
               <img src={RadicalX} alt="RadicalX.png" className="h-96 rounded-3xl"/>
                 <div className="hover-text text-m absolute inset-0 bg-black bg-opacity-70 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-3xl">
@@ -91,14 +94,16 @@ export const Gallary = ({setSelectedPage}:Props) => {
                 Simultaneously I was in a second team that was tasked to develop a content filter that is implemented into the AI, this required me to learn vertex AI.              
                 </div>
             </div>
+            </a>
 
             {/* Image 2 Hover */}
             <div className="relative m-4">
-              <img src={FunWE} alt="FunWe.png" className="h-96 rounded-3xl"/>
-              <div className="hover-text absolute inset-0 bg-black bg-opacity-70 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-3xl">
+              <img src={ComingSoon} alt="ComingSoon.png" className="h-96"/>
+              <div className="hover-text text-m absolute inset-0 bg-black bg-opacity-70 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
               </div>
             </div>
+          
 
           </div>
 
@@ -109,15 +114,29 @@ export const Gallary = ({setSelectedPage}:Props) => {
     </div>
 
   {/* COMMUNITY  */}
-        <div className="mb-20">
-          <Expandable headerText="Community" headerClassName="text-5xl text-white text-center mx-auto">
-          <div className="container mx-auto flex px-10 pt-20 md:flex-row flex-col items-center">
-          <p> This is still undergoing Maintenance, check back soon to discover the mystery of my impact on the Community</p>
-          </div>
-          </Expandable>
+    <div className="mb-20">
+      <Expandable headerText="Community" headerClassName="text-5xl text-white text-center mx-auto mb-4">
+        <div className="h-auto relative flex flex-col items-center border-4 border-solid border-white p-4">
+            <div className="h-auto relative flex flex-col items-center">
 
-        </div>
-      </div>
+                {/* Image 1 Hover */}
+                      <a href="https://www.ieee.org" target="_blank" rel="noopener noreferrer">
+                        <div className="relative m-4 ">
+                          <img src={IEEE} alt="IEEE.png" className="h-96"/>
+                            <div className="hover-text text-m absolute inset-0 bg-black bg-opacity-70 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            I was tasked with designing and implementing the conformation email that user receive after verifying their emails. using React. I followed a set of requirements and I worked with a team that would check in weekly to inspect progress. 
+                            Simultaneously I was in a second team that was tasked to develop a content filter that is implemented into the AI, this required me to learn vertex AI.              
+                          </div>
+                        </div>
+                      </a>
+              
+            </div>
+          </div>
+      </Expandable>
+
+    </div>
+
+    </div>
 
             {/* transition */}
 {isAboveMediumScreens && (
