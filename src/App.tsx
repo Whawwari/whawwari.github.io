@@ -33,23 +33,24 @@ const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home
   isTopOfPage={isTopOfPage}
   />
 
-<div className=" bg-">
-  <Home setSelectedPage={setSelectedPage}/>
+<div className="">
+  <Home 
+  setSelectedPage={setSelectedPage}/>
 </div>
  
-  <div className=" bg- relative">
-    <Gallary setSelectedPage={setSelectedPage}/>
+  <div className="relative">
+    <Gallary 
+    setSelectedPage={setSelectedPage}/>
   </div>
-  
 
- <div className=" bg- absolute">
- <Footer
+
+<div className=" ">
+ <Contact
   setSelectedPage={setSelectedPage}/>
 </div>
 
-
-<div className=" bg- absolute">
- <Contact
+<div className="">
+ <Footer
   setSelectedPage={setSelectedPage}/>
 </div>
 

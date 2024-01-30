@@ -15,6 +15,7 @@ const Home = ({setSelectedPage} : Props) => {
 return ( 
     <section id="home" className="gap-16 md:h-screen md:pb-0">
 
+        
     {/*image and main header*/}
     <div className='md:flex mx-auto w-5/6 h-full items-center justify-center md:h-5/6'>
         {/* Main header*/}
@@ -26,7 +27,7 @@ return (
                         <img  className="h-auto" alt="MainTitle" src={MainTitle}/>
                     </div>
                 </div>
-            <p className='mt-8 text-lg'> "Success is not final, failure is not fatal: It is the courage to continue that counts." <br/> <br/> - Winston Churchill </p>
+         <p className='mt-8 text-lg'> "Success is not final, failure is not fatal: It is the courage to continue that counts." <br/> <br/> - Winston Churchill </p>
             </div>
        
         {/*action button*/}
@@ -40,10 +41,9 @@ return (
             <p>hello world</p>
             </AnchorLink> */}
         </div>   
-        
+   
         </div>  
-        
-    
+      
 {/*image*/}
 <div className="z-10  md:z-10; md:ml-40 md:mt-16 md:justify-items-end md:h-3/5 md:w-3/5 ">
     <Spline scene="https://prod.spline.design/l1M2Zxypra5uUpTB/scene.splinecode"/>

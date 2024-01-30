@@ -21,6 +21,19 @@ export const Gallary = ({setSelectedPage}:Props) => {
   return (
     <section id="gallary" className="bg-Gray mx-auto h-auto min-h-full w-full md:mt-0">{/*add mt if you want space between gallary and home */}
 
+
+<motion.div
+          className=""
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1 }}
+          variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+
       <div className=" flex justify-center max-w-full h-96 overflow-hidden">         
           <img className="object-cover h-full w-fit" alt='Frame' src={gallary}/>
        </div>
@@ -89,7 +102,7 @@ export const Gallary = ({setSelectedPage}:Props) => {
             <a href="https://www.radicalx.co" target="_blank" rel="noopener noreferrer">
             <div className="relative m-4 ">
               <img src={RadicalX} alt="RadicalX.png" className="h-96 rounded-3xl"/>
-                <div className="hover-text text-m absolute inset-0 bg-black bg-opacity-70 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-3xl">
+                <div className="hover-text text-lg absolute inset-0 bg-black bg-opacity-80 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-3xl">
                 I was tasked with designing and implementing the conformation email that user receive after verifying their emails. using React. I followed a set of requirements and I worked with a team that would check in weekly to inspect progress. 
                 Simultaneously I was in a second team that was tasked to develop a content filter that is implemented into the AI, this required me to learn vertex AI.              
                 </div>
@@ -99,8 +112,8 @@ export const Gallary = ({setSelectedPage}:Props) => {
             {/* Image 2 Hover */}
             <div className="relative m-4">
               <img src={ComingSoon} alt="ComingSoon.png" className="h-96"/>
-              <div className="hover-text text-m absolute inset-0 bg-black bg-opacity-70 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+              <div className="hover-text text-lg absolute inset-0 bg-black bg-opacity-90 text-white p-4 overflow-y-auto opacity-0 hover:opacity-100 transition-opacity duration-300">
+              I'm actively looking for an internship for Summer 2024! If you are on this page, l'd love to stay in touch with you. All my contact information can be found at the bottom of this page
               </div>
             </div>
           
@@ -135,10 +148,22 @@ export const Gallary = ({setSelectedPage}:Props) => {
       </Expandable>
 
     </div>
-
     </div>
+    </motion.div>  
 
-            {/* transition */}
+
+    <motion.div
+          className=""
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+            {/* transition    put piece of paper beside each image, and make a pop up massage pop up when clicked discribing when and where this pic was.*/}
 {isAboveMediumScreens && (
   
   <div className="h-[450px] w-full">
@@ -153,7 +178,8 @@ export const Gallary = ({setSelectedPage}:Props) => {
 )
 }
 
-      </motion.div>     
+      </motion.div>  
+      </motion.div> 
     </section>
   
   )
