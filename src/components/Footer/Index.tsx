@@ -1,6 +1,6 @@
 import { SelectedPage } from "@/shared/types";
 import { motion,  } from "framer-motion";
-import Picker from 'emoji-picker-react';
+// import Picker from 'emoji-picker-react';
 
 type Props={
     setSelectedPage: (value:SelectedPage) => void
