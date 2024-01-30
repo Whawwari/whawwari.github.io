@@ -5,6 +5,7 @@ import Link from "./link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ResumeLink from "@/shared/ResumeLink";
+import { FaGithub, FaLinkedin, FaFilePdf} from 'react-icons/fa';
 
 type Props = {
     selectedPage: SelectedPage;
@@ -44,9 +45,32 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
                     </div>
                     <div className={`${flexBetween} gap-8`}>
-                        
-                    {/* <button className="text-white"> Dark mode</button> */}
-                    
+                        {/*ICONS */}
+                            <a
+                         href="https://github.com/Whawwari"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white"
+                            >
+                        <FaGithub size={20} />
+                            </a>
+
+                            <a
+                         href="https://www.linkedin.com/in/waleed-hawwari/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white"
+                            >
+                        <FaLinkedin size={20} />
+                            </a>
+
+                            <a
+                         href="WResume"
+                        download="resume.pdf"
+                        className="text-white"
+                            >
+                        <FaFilePdf size={20} />
+                            </a>
                     </div>
             </div> 
             ) : (

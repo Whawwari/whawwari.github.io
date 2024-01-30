@@ -1,6 +1,7 @@
 import { SelectedPage } from "@/shared/types";
 import { motion,  } from "framer-motion";
-// import Picker from 'emoji-picker-react';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
+
 
 type Props={
     setSelectedPage: (value:SelectedPage) => void
@@ -32,13 +33,13 @@ const Footer = ({setSelectedPage}:Props) => {
           All content and images on this page have been curated by Waleed Hawwari.
           <br/> All resources utilized are free from patents and copyright restrictions.".<br/>
           </p>
-          <p>© Created with by Waleed!.</p>
+          <p>© Created with ❤️ by Waleed!.</p>
           <p>© WH All Rights Reserved.</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold">Links To My Social</h4>
-          <p className="my-5 hover:text-blue-500"><a href="https://www.linkedin.com/in/waleed-hawwari/">Linkdin</a></p>
-          <p className="my-5 hover:text-green-500"><a href="https://github.com/Whawwari">GitHub</a></p>
+          <h4 className="font-bold">My Socials</h4>
+          <p className="my-5 hover:text-blue-500"><FaGithub size={20} /><a href="https://www.linkedin.com/in/waleed-hawwari/">LinkedIn</a></p>
+          <p className="my-5 hover:text-green-500"><FaLinkedin size={20} /><a href="https://github.com/Whawwari">GitHub</a></p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Contact Me</h4>
