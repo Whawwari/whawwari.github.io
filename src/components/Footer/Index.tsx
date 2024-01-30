@@ -34,7 +34,7 @@ const Footer = ({setSelectedPage}:Props) => {
           <br/> All resources utilized are free from patents and copyright restrictions.".<br/>
           </p>
           <p>© Created with ❤️ by Waleed!.</p>
-          <p>© WH All Rights Reserved.</p>
+          <p>WH All Rights Reserved.</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">My Socials</h4>
