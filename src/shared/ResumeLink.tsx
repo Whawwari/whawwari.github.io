@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import WResume from '@/assets/img/Waleed Resume-NgNSyWO0.pdf';
+import WResume from '@/assets/img/Waleed Resume.pdf';
 
 
 interface ResumeLinkProps {
