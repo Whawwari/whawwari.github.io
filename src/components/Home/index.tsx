@@ -13,7 +13,7 @@ const Home = ({setSelectedPage} : Props) => {
 
  
 return ( 
-    <section id="home" className="gap-16 md:h-screen md:pb-0">
+    <section id="home" className="  gap-16 md:h-screen md:pb-0">
 
         
     {/*image and main header*/}
@@ -45,8 +45,8 @@ return (
         </div>  
       
 {/*image*/}
-<div className="z-10  md:z-10; md:ml-40 md:mt-16 md:justify-items-end md:h-3/5 md:w-3/5 ">
-    <Spline scene="https://prod.spline.design/l1M2Zxypra5uUpTB/scene.splinecode"/>
+<div className="z-10 md:z-10; md:ml-40 md:mt-16 md:justify-items-end md:h-4/5 md:w-4/5 border-none">
+<Spline scene="https://prod.spline.design/BgJQxS3ZVb8jH7hX/scene.splinecode" />
 </div>
 </div>
 

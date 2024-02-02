@@ -19,7 +19,7 @@ type Props={
 export const Gallary = ({setSelectedPage}:Props) => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   return (
-    <section id="gallary" className="bg-Gray mx-auto h-auto min-h-full w-full md:mt-0">{/*add mt if you want space between gallary and home */}
+    <section id="gallary" className="bg-Gray mx-auto mt-96 h-auto min-h-full w-full md:mt-0">{/*add mt if you want space between gallary and home */}
 
 
 <motion.div

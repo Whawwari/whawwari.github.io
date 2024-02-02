@@ -26,6 +26,8 @@ export default {
        "Brick":"#B22222",
        "Ferrari":"#FF2800",
        "LRed":"#ff4747",
+       "DGray":"#0A0A0A",
+       "DDGray":"#121212",
       },
       
 backgroundImage: (theme) => ({
