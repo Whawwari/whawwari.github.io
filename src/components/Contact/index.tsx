@@ -27,9 +27,7 @@ const Contact = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
-      <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
-      >
+      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}>
         {/* HEADER */}
         <motion.div
           className="md:w-3/5"
@@ -46,7 +44,8 @@ const Contact = ({ setSelectedPage }: Props) => {
             <span className="text-LPink">SEND ME</span> A MESSAGE
           </HText>
           <p className="my-5">
-            Whether it's sharing wisdom or just having a friendly chat, I'd love to have a conversation with you..
+            Whether it's sharing wisdom or just having a friendly chat, I'd love
+            to have a conversation with you..
           </p>
         </motion.div>
 
@@ -68,7 +67,6 @@ const Contact = ({ setSelectedPage }: Props) => {
               onSubmit={onSubmit}
               action="https://formsubmit.co/WaleedHawwari.1224@gmail.com"
               method="POST"
-            
             >
               <input
                 className={inputStyles}
@@ -77,7 +75,6 @@ const Contact = ({ setSelectedPage }: Props) => {
                 {...register("name", {
                   required: true,
                   maxLength: 100,
-                  
                 })}
               />
               {errors.name && (

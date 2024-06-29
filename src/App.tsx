@@ -1,15 +1,15 @@
-import Navbar from "@/components/Navbar/Index";
 import { useState, useEffect } from "react";
 import { SelectedPage } from "./shared/types";
-import Home from "@/components/Home";
-import Gallary from "./components/Gallary";
-import Footer from "@/components/Footer/Index";
-import Contact from "./components/Contact";
-
-
+import Navbar from "@/pages/Navbar/Index";
+import Home from "./pages/Home/Index";
+//import Gallary from "./components/Gallary";
+import Transition from "./pages/Transition/Transition";
+import Projects from "./pages/Projects/Index";
 
 function App() {
-const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(
+    SelectedPage.Home
+  );
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
   useEffect(() => {
@@ -24,20 +24,30 @@ const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return ( 
+  return (
+    <div className="">
+      <div>
+        <div className="bg-Redbg bg-center bg-cover bg-local bg-no-repeat">
+          <Navbar
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            isTopOfPage={isTopOfPage}
+          />
 
-  <div className="app bg-white h-full">
-  <Navbar 
-  selectedPage={selectedPage} 
-  setSelectedPage={setSelectedPage}
-  isTopOfPage={isTopOfPage}
-  />
+          <Home setSelectedPage={setSelectedPage} />
+        </div>
 
-<div className="">
-  <Home 
-  setSelectedPage={setSelectedPage}/>
-</div>
- 
+        <Transition
+          size={"large"}
+          Text={"Give me a problem"}
+          Textcont={"I'll give you solutions"}
+        />
+
+        <div>
+          <Projects setSelectedPage={setSelectedPage} />
+        </div>
+
+        {/*
   <div className="relative">
     <Gallary 
     setSelectedPage={setSelectedPage}/>
@@ -52,11 +62,10 @@ const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home
 <div className="">
  <Footer
   setSelectedPage={setSelectedPage}/>
-</div>
-
-</div>
-
+</div> */}
+      </div>
+    </div>
   );
-    }
- 
-export default App
+}
+
+export default App;
