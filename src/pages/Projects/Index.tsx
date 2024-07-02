@@ -1,4 +1,3 @@
-import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import Showcase from "@/components/Showcase.component";
 
@@ -68,8 +67,8 @@ const contenttwo = [
   },
 ];
 
-export const Projects = ({ setSelectedPage }: Props) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+export const Projects = ({}: Props) => {
+  // const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   return (
     <section id="gallary" className="bg-offwhite h-full">
       <div className="">

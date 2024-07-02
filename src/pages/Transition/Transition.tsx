@@ -7,7 +7,7 @@ type TransitionProps = {
   size: "small" | "medium" | "large" | "Xlarge";
 };
 
-const Transition = ({ Text, Textcont, size }: TransitionProps) => {
+const Transition = ({ size }: TransitionProps) => {
   let textSizeClass;
 
   switch (size) {
