@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { SelectedPage } from "@/shared/types";
 import Link from "./Link";
 import Paragraph from "@/components/Paragraph";
@@ -18,17 +18,16 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
       <div className="flex justify-between items-center top-0 w-full p-4">
         <div className="text-white">
           <Paragraph size="large" bold={false} color="text-white">
-            {" "}
-            Waleed Hawwari{" "}
+            Waleed Hawwari
           </Paragraph>
         </div>
         <div className="text-white">
           <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-            {isMenuToggled ? (
+            {/* {isMenuToggled ? (
               <XMarkIcon className="h-12 w-12 text-white" />
             ) : (
               <Bars3Icon className="h-12 w-12 text-white" />
-            )}
+            )} */}
           </button>
         </div>
       </div>
@@ -37,7 +36,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
         <div className="fixed right-0 top-0 z-40 h-92 w-[400px] bg-offwhite drop-shadow-xl">
           <div className="flex justify-end p-4">
             <button onClick={() => setIsMenuToggled(false)}>
-              <XMarkIcon className="h-12 w-12 text-black-400" />
+              {/* <XMarkIcon className="h-12 w-12 text-black-400" /> */}
             </button>
           </div>
           <div className="flex flex-col items-center">

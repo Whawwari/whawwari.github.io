@@ -9,7 +9,6 @@ type TransitionProps = {
 
 const Transition = ({ size }: TransitionProps) => {
   let textSizeClass;
-
   switch (size) {
     case "small":
       textSizeClass = "text-sm";
