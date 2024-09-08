@@ -1,8 +1,8 @@
 import { useState } from "react";
-// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { SelectedPage } from "@/shared/types";
 import Link from "./Link";
-import Paragraph from "@/components/Paragraph";
+import { FlipWords } from "@/components/UI/flip-words";
 
 type Props = {
   selectedPage: SelectedPage;
@@ -12,22 +12,27 @@ type Props = {
 
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
+  const words = ["Tech Enthusiast", "Problem Solver", "Innovative Thinker", "Curious Learner", "Detail-Oriented Engineer", "Passionate Coder", "Dedicated Developer", 
+    "Software developer", "Adaptive Engineer", "Analytical Thinker", "Driven Student", "Resourceful Innovator", "Collaborative Team Player", "Solution-Focused Engineer", 
+    "Methodical Learner", "Project manager", "Proactive Creator", "Critical Thinker", "Gamer", ];
 
   return (
     <nav>
       <div className="flex justify-between items-center top-0 w-full p-4">
-        <div className="text-white">
-          <Paragraph size="large" bold={false} color="text-white">
-            Waleed Hawwari
-          </Paragraph>
+        <div className="flex justify-between w-1/2 text-white font-Fatface text-xl">
+          <div className="mx-4">
+          I am a
+        <FlipWords words={words} /> <br />
+          </div>
+
         </div>
         <div className="text-white">
           <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-            {/* {isMenuToggled ? (
+            {isMenuToggled ? (
               <XMarkIcon className="h-12 w-12 text-white" />
             ) : (
               <Bars3Icon className="h-12 w-12 text-white" />
-            )} */}
+            )}
           </button>
         </div>
       </div>
@@ -36,7 +41,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
         <div className="fixed right-0 top-0 z-40 h-92 w-[400px] bg-offwhite drop-shadow-xl">
           <div className="flex justify-end p-4">
             <button onClick={() => setIsMenuToggled(false)}>
-              {/* <XMarkIcon className="h-12 w-12 text-black-400" /> */}
+              <XMarkIcon className="h-12 w-12 text-black-400" />
             </button>
           </div>
           <div className="flex flex-col items-center">
@@ -47,32 +52,31 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Gallary"
+                page="Experience"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Contact"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Resume"
+                page="Projects"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
             </div>
           </div>
 
-          <div className="flex mt-6 justify-between py-2 px-4">
+          <div className="flex mt-24 justify-between py-2 px-4">
             <div>
               <p>Hello</p>
             </div>
-
             <div className="flex gap-3">
-              <p>LinkedIn</p>
-              <p>GitHub</p>
-            </div>
+  <a href="https://www.linkedin.com/in/waleed-hawwari/" target="_blank" rel="noopener noreferrer" className=" hover:underline">
+    LinkedIn
+  </a>
+  <a href="https://github.com/Whawwari" target="_blank" rel="noopener noreferrer" className=" hover:underline">
+    GitHub
+  </a>
+</div>
+
           </div>
         </div>
       )}

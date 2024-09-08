@@ -11,4 +11,5 @@ export interface ShowcaseListProps {
   content: ShowcaseProps[];
   Company: string;
   background: string;
+  position: string;
 }

@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { LampContainer } from "../../components/UI/Lamp";
+import { SparklesCore } from "@/components/UI/sparkles";
 
 type TransitionProps = {
   Text: string;
@@ -27,39 +26,26 @@ const Transition = ({ size }: TransitionProps) => {
   }
 
   return (
-    <section className="relative w-auto h-full bg-offwhite">
-      {/* <SparklesCore
-          id="tsparticlesfullpage"
+    <section className="relative w-auto h-[700px] bg-white">
+      <div className="absolute inset-0 z-0">
+        <SparklesCore
           background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-screen"
+          minSize={0.4}
+          maxSize={1}
+          particleDensity={120}
+          className="w-full h-full"
           particleColor="#000000"
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-center">
-          <div className={`flex justify-center items-center ${textSizeClass} text-black`}>
-            {Text}
-          </div>
-          <div className={`flex justify-center items-center font-bold mt-8 text-black ${textSizeClass}`}>
-            {Textcont}
-          </div>
-        </div> */}
-      <LampContainer>
-        <motion.h1
-          initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="mt-8 bg-gradient-to-br from-slate-300 to-offwhite py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+      </div>
+
+      <div className="relative flex items-center justify-center h-full">
+        <div
+          className={`relative bg-gradient-to-br from-red-950 to-black py-4 bg-clip-text text-center ${textSizeClass} font-medium font-Fatface tracking-tight text-transparent z-50`}
         >
           Give me a problem, <br /> I'll give you{" "}
           <span className="text-red-800">SOLUTIONS</span>
-        </motion.h1>
-      </LampContainer>
+        </div>
+      </div>
     </section>
   );
 };
